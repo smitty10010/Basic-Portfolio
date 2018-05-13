@@ -1,0 +1,48 @@
+body {
+    position: fixed;
+    left: 204px;
+}
+
+li {
+    float: right;
+}
+
+a {
+    display: block;
+    margin-right: 8px;
+    border-right: 1px solid;
+}
+
+header {
+    clear: both;
+    padding-top: 15px;
+}
+
+.container {
+    display: grid;
+    width: 960px;
+    height: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50px 1fr 100%;
+    grid-gap: 1rem;
+    grid-template-areas: "header header header" "main main main" "footer footer footer"
+}
+
+.header {
+    grid-area: header;
+}
+
+.main {
+    grid-area: main;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+footer {
+    text-align: center;
+    color: white;
+    background-color: black;
+    padding-top: 30px;
+}
