@@ -1,48 +1,122 @@
 body {
-    position: fixed;
-    left: 204px;
-}
-
-li {
-    float: right;
-}
-
-a {
-    display: block;
-    margin-right: 8px;
-    border-right: 1px solid;
-}
-
-header {
-    clear: both;
-    padding-top: 15px;
+    background-image: url(../images/light-grey-terrazzo.png);
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
 
 .container {
     display: grid;
-    width: 960px;
-    height: 100%;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 50px 1fr 100%;
-    grid-gap: 1rem;
-    grid-template-areas: "header header header" "main main main" "footer footer footer"
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: 1fr 320px 320px 320px 1fr;
+    grid-template-rows: 90px 50px 50px 1fr 50px auto;
 }
 
 .header {
-    grid-area: header;
+    grid-column: 1/6;
+    grid-row: 1/2;
+    background-color: #ffffff;
+    border-bottom: 5px solid #cccccc;
+}
+
+.heading {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    text-align: center;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-size: 40px;
+    padding-top: 30px;
+    background-color: #4aaaa5;
+    border-bottom: 5px solid #cccccc;
+    color: #ffffff;
+}
+
+.nav {
+    grid-column: 4/5;
+    grid-row: 1/2;
+}
+
+ul {
+    padding-top: 45px;
+    text-align: center;
+}
+
+li {
+    display: inline;
+    padding-right: 8px;
+    margin-right: 8px;
+    border-right: 1px solid;
+    color: #cccccc;
+}
+
+li:last-child {
+    border-right: none;
+}
+
+a:link {
+    color: #cccccc;
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #cccccc;
+}
+
+.aboutme {
+    grid-column: 2/5;
+    grid-row: 3/4;
+    background-color: #ffffff;
+    border-style: solid;
+    border-color: #dddddd;
+    border-width: 2px 2px 0px 2px;
+}
+
+.aboutme h2 {
+    margin-top: 15px;
+    margin-left: 78px;
+    margin-right: 80px;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    color: #4aaaa5;
+    background-color: #ffffff;
+    border-style: solid;
+    border-color: #dddddd;
+    border-width: 0px 0px 4px 0px;
 }
 
 .main {
-    grid-area: main;
+    grid-column: 2/5;
+    grid-row: 4/5;
+    background-color: #ffffff;
+    border-style: solid;
+    border-color: #dddddd;
+    border-width: 0px 2px 2px 2px;
+}
+
+.main img {
+    margin-left: 80px;
+    margin-right: 20px;
+    float: left;
+}
+
+.main p {
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-bottom: 40px;
 }
 
 .footer {
-    grid-area: footer;
+    grid-column: 1/6;
+    grid-row: 6/7;
 }
 
 footer {
     text-align: center;
     color: white;
-    background-color: black;
+    background-color: #666666;
+    border-top: 5px solid #4aaaa5;
     padding-top: 30px;
+}
+
+footer p {
+    padding-bottom: 5px;
 }
