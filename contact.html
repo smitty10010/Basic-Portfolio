@@ -40,11 +40,36 @@
         <div class="mainContent">
             <main>
                 <section>
-                    <article>
-                        <img src="https://loremflickr.com/197/146/cat" alt="Random images of cats after each refresh." />
-                        <p>Hello, I'm Robert Smithson and I'm interested in creating new things and displaying data to customers.
+                    <form>
+                        <p>
+                            <label for="name">
+                                <span>Name</span>
+                            </label>
                         </p>
-                    </article>
+                        <p>
+                            <input type="text" id="name" name="user_name" placeholder="John Doe">
+                        </p>
+                        <p>
+                            <label for="mail">
+                                <span>Email</span>
+                            </label>
+                        </p>
+                        <p>
+                            <input type="email" id="mail" name="user_mail" placeholder="example@domain.com">
+                        </p>
+                        <p>
+                            <label for="msg">
+                                <span>Message</span>
+                            </label>
+                        </p>
+                        <p>
+                            <textarea type="text" id="msg" name="user_message">
+                            </textarea>
+                        </p>
+                        <div class="button">
+                            <button type="submit">Submit</button>
+                        </div>
+                    </form>
                 </section>
             </main>
         </div>
