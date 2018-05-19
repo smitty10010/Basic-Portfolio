@@ -259,5 +259,29 @@ footer {
     grid-area: footer;
     background-color: gray;
     color: white;
-    border-top: 5px solid green
+    border-top: 5px solid green;
+}
+
+footer>h3 {
+    margin: 0% 0% 1% 0%;
+}
+
+
+/* icons from awesome font */
+
+.icons {
+    margin: 0% 1.5% 0% 0%;
+    padding: none;
+    border: none;
+}
+
+.icons>li {
+    display: inline;
+    margin: 0% 0% 0% 0%;
+    padding: none;
+    border: none;
+}
+
+.icons>a:activate {
+    transform: scale(2, 3);
 }
