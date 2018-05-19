@@ -1,8 +1,13 @@
+/* setting basic template for body */
+
 body {
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     line-height: 23px;
     background-image: url(../images/light-grey-terrazzo.png);
 }
+
+
+/* creating grid with 6 columns and 3 rows. */
 
 .container {
     width: 100vw;
@@ -12,6 +17,9 @@ body {
     height: 100vh;
     grid-template-areas: "header header header nav nav nav" ".... main main main main ...." "footer footer footer footer footer footer";
 }
+
+
+/* placing header */
 
 header {
     grid-column: 1/4;
@@ -30,6 +38,9 @@ h1 {
     padding: 5% 0% 6.2% 0%;
     color: white;
 }
+
+
+/* nav bar will be in same column as header */
 
 nav {
     grid-column: 4/7;
@@ -68,6 +79,9 @@ a:hover {
     transition: color 1s;
 }
 
+
+/* the main content area should take up the width of only 960px */
+
 main {
     grid-area: main;
     background-color: #cccccc;
@@ -92,6 +106,9 @@ main section article p {
     padding-left: 5%;
     margin: 0 10% 3% 0;
 }
+
+
+/* creating sub grid for portfolio html */
 
 .portfolio {
     display: grid;
@@ -204,6 +221,9 @@ main section article p {
     color: #ffffff;
     background-color: #4aaaa5;
 }
+
+
+/* the form css for the contact html */
 
 form span {
     margin: 0% 0% 0% 5%;
